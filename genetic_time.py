@@ -20,4 +20,4 @@ for i in range(2, 80):
     )
     end = time.time()
 
-    print(f"{i}\t|\t{generations}\t|\t{(end - start):e}s\t|\t{(fitness(population[0])/target_value*100):.2f}%\t|\t{genetic.genome_to_string(population[0])}")
+    print(f"{i}\t{generations}\t{(end - start):e}\t{(fitness(population[0])/target_value*100):.2f}%\t{genetic.genome_to_string(population[0])}")
